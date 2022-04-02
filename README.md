@@ -40,6 +40,8 @@ An app to track up-to-dated cryptocies.
 
 * Local Profile pages for each user
 * Main page have searching bar to search for cryptocurrencies.
+* Show most gain/most loss.
+* Show popular cryptocurrencies on the main page.
 
 **Optional Nice-to-have Stories**
 
