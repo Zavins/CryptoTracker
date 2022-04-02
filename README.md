@@ -2,9 +2,10 @@
 
 ## 
 1. [App Evaluation](#Overview)
-2. [Product Spec](#Product-Spec)
-3. [Further Implementation](#Further-Implementation)
-4. [Wireframes](#Wireframes)
+2. [APIs](#APIs)
+3. [Product Spec](#Product-Spec)
+4. [Further Implementation](#Further-Implementation)
+5. [Wireframes](#Wireframes)
 
 ## Overview
 ### Description
@@ -24,6 +25,11 @@ An app to track up-to-dated cryptocies.
 - Users can change whenever they need to track their favorite crypto, and users can also see the news of crypto every day when they open their app. **
 - **Scope:
   CrypotTracker is narrowly focused on crypto assets and news of crypto. This app will have a huge advantage to the hodles in crypto to see the status of the market easily with their phone app instead of going to google and searching for the market.  **
+
+## APIs
+**APIs implemented**
+- **Cryptocurrency data:
+- **Recent news
 
 
 ## Product Spec
