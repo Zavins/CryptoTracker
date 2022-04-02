@@ -28,8 +28,8 @@ An app to track up-to-dated cryptocies.
 
 ## APIs
 **APIs implemented**
-- **Cryptocurrency data:
-- **Recent news
+- **Cryptocurrency data:**
+- **Recent news:**
 
 
 ## Product Spec
