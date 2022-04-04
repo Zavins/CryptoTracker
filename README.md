@@ -13,15 +13,15 @@ An app to track up-to-dated cryptocies.
 
 ### App Evaluation
 [App that is designed for tracking crptocurrencies in 21st Century]
- **Category
+ **Category**
 -  crypto market / Different types of crypto asset/ pricing telle/ and news about market teller** 
- **Mobile
+ **Mobile**
  Website is view only, Which Mobile is use for the user can see the status of the crypto and see the current and new updated news in crypto **
-- **Story:
+- **Story**:
 - Any one who is interested in crypto could use it to view the market price of the crypto and news related to crypto and user has option to choose whatever crypto is they are more interested and get notify when their favorite crypto asset up or dow**.. 
-- **Market:
+- **Market**:
 - Since everyone is getting in to crypto invest this could be sparking app.  which is everyone who has interesting in the market   will be enjoying this app, which they can easily watch the price fluctuate of crypto in their phone with single touch on it, And decided to whether they can invest or to sell their asset, and they can easily watch the news related to the crypto in app.. And also the app will notify them if their favorite crypto asset will bullied or beared to take some action on their asset**
-- **Habit:
+- **Habit**:
 - Users can change whenever they need to track their favorite crypto, and users can also see the news of crypto every day when they open their app. **
 - **Scope:
   CrypotTracker is narrowly focused on crypto assets and news of crypto. This app will have a huge advantage to the hodles in crypto to see the status of the market easily with their phone app instead of going to google and searching for the market.  **
