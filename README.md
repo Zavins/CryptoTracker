@@ -17,8 +17,8 @@ An app to track up-to-dated cryptocies.
 **Category**
 - crypto market / Different types of crypto asset/ pricing telle/ and news about market teller** 
 
-**Mobile**
- Website is view only, Which Mobile is use for the user can see the status of the crypto and see the current and new updated news in crypto **
+**Mobile**:
+- Website is view only, Which Mobile is use for the user can see the status of the crypto and see the current and new updated news in crypto **
 
 **Story**:
 - Any one who is interested in crypto could use it to view the market price of the crypto and news related to crypto and user has option to choose whatever crypto is they are more interested and get notify when their favorite crypto asset up or dow. 
