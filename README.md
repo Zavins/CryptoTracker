@@ -79,7 +79,7 @@ An app to track up-to-dated cryptocies.
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://github.com/Zavins/CryptoTracker/blob/wireframe-image/20220407_124144.jpg?raw=true" width=600>
+<img src="./20220407_124144.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
