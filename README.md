@@ -129,6 +129,27 @@ An app to track up-to-dated cryptocurrencies.
    | market_cap_change_pct| String   | the percentage of change of total value of all the coins that have been mined |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+(Read/GET) Query all Notification happen where user is selected favorite coin 
+let query = PFQuery(className:"Notification")
+query.whereKey("coin", equalTo: currentUser)
+query.order(byDescending: "currentpriceHightest")
+query.findObjectsInBackground { (notification: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let notification = notifications {
+      print("Successfully retrieved \(posts.count) posts.")
+  // TODO: Do something with Notifiy the user about their coins up and down...
+   }
+}
+* (Chose/favorite) Notification when up and down. 
+* (Delete/Change) Delete the favorite coin you make
+* (Create/Save) Create a new screen to save your favorite coins
+* (Create/news) Create a new screen to show update news story about crypto realating.
+* Create new screen to show you candleStick chart when you select in coin
+* (Create/back) Creat back to return to the all coins shows screen.
+  Profile Screen
+* (Shows) Marketing of the coins with CandleStick chart on it 
+##Optional
+* If login page created
+   (Read/GET) Query logged in user object
+   (Update/PUT) Update user profile image and Name
