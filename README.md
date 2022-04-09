@@ -9,13 +9,13 @@
 
 ## Overview
 ### Description
-An app to track up-to-dated cryptocies.
+An app to track up-to-dated cryptocurrencies.
 
 ### App Evaluation
-[App that is designed for tracking crptocurrencies in 21st Century]
+[App that is designed for tracking cryptocurrencies in 21st Century]
 
 **Category**
-- crypto market / Different types of crypto asset/ pricing telle/ and news about market teller** 
+- crypto market / Different types of crypto asset/ pricing tell/ and news about market teller** 
 
 **Mobile**:
 - Website is view only, Which Mobile is use for the user can see the status of the crypto and see the current and new updated news in crypto **
@@ -52,7 +52,7 @@ An app to track up-to-dated cryptocies.
 
 **Optional Nice-to-have Stories**
 
-* Trading cryptocies.
+* Trading cryptocurrencies.
 
 ### 2. Screen Archetypes
 
@@ -61,13 +61,13 @@ An app to track up-to-dated cryptocies.
 #### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-* Up-to-dated cryptocies data market
+* Up-to-dated cryptocurrencies data market
 * News Page
 
 
 ** Flow Navigation (Screen to Screen)
 * Clicked on the app -> Show Main page showing the market data
-* Each crypocurrency has a button, clicking it redirectes the user to a new screen that shows the graph of price trend, highest price, lowest price, average price...
+* Each cryptocurrency has a button, clicking it redirectes the user to a new screen that shows the graph of price trend, highest price, lowest price, average price...
 * News Selection -> Showing news page with the newest news about
 
 
@@ -88,7 +88,46 @@ An app to track up-to-dated cryptocies.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Cryptocurrencies
+
+   | Property             | Type     | Description                                                                                                         |
+   | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
+   | id                   | String   | id of the currency                                                                                                  |
+   | currency             | String   | type of currency                                                                                                    |
+   | symbol               | String   | symbol of currency                                                                                                  |
+   | name                 | String   | name of currency                                                                                                    |
+   | logo_url             | String   | logo of currency                                                                                                    |
+   | status               | String   | status of currency                                                                                                  |
+   | platform_currency    | String   | platform of currency                                                                                                |
+   | price                | Double   | current price of currency                                                                                           |
+   | price_date           | String   | the date of the current price                                                                                       |
+   | price_timestamp      | String   | the price at the exact moment when the block has been mined and validated by the blockchain network                 |
+   | max_supply           | Int      | the maximum number of coins or tokens that will be ever created                                                     |
+   | market_cap           | Int      | the total value of all the coins that have been mined                                                               |
+   | market_cap_dominance | Double   | the ratio between the market capitalization of currency to the total market cap of the entire cryptocurrency market |
+   | num_exchanges        | Int      | number of the amount has been exchanged                                                                             |
+   | num_pairs            | Int      | assets that can be traded for each other on an exchange                                                             |
+   | num_pairs_unmapped   | Int      | unmapped assets that can be traded for each other on an exchange                                                    |
+   | first_candle         | String   | first price activity of an asset                                                                                    |
+   | first_trade          | String   | first trade activity of an asset                                                                                    |
+   | first_order_book     | String   | first electronic list of buy and sell orders for a security or other instrument organized by price level            |
+   | rank                 | Int      | rank of the currency                                                                                                |
+   | rank_delta           | Int      | rank of a risk metric that estimates the change in price of a derivative                                            |
+   | high                 | Double   | the highest price a trader paid for an asset                                                                        |
+   | high_timestamp       | String   | the exact moment of the highest price at when the block has been mined and validated by the blockchain network         |
+
+#### DayChange
+
+   | Property             | Type     | Description                                                                   |
+   | -------------------- | -------- | ----------------------------------------------------------------------------- |
+   | volume               | Double   | the sum total of actual trades taking place                                   |
+   | price_change         | Double   | price change in n day(s)                                                      |
+   | price_change_pct     | Double   | percentage of price change in n day(s)                                        |
+   | volume_change        | Double   | the change of volume in n day(s)                                              |
+   | volume_change_pct    | Double   | percentage of the change of volume in n day(s)                                |
+   | market_cap_change    | String   | the change of total value of all the coins that have been mined               |
+   | market_cap_change_pct| String   | the percentage of change of total value of all the coins that have been mined |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
