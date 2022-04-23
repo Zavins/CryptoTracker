@@ -1,5 +1,4 @@
 package com.example.cryptotracker
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -45,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         }
         // Set default selection
         findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_home
-
 
         val client = AsyncHttpClient()
         client.get(CRYPTO_MARKET_URL, object: JsonHttpResponseHandler() {
