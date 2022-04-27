@@ -1,4 +1,4 @@
-package utilities
+package com.example.cryptotracker.utilities
 
 import org.json.JSONObject
 

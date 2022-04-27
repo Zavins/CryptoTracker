@@ -101,7 +101,7 @@ An app to track up-to-dated cryptocurrencies.
    | platform_currency    | String   | platform of currency                                                                                                |
    | price                | Double   | current price of currency                                                                                           |
    | price_date           | String   | the date of the current price                                                                                       |
-   | price_timestamp      | String   | the price at the exact moment when the block has been mined and validated by the blockchain network                 |
+   | price_timestamp      | String   | the price at the exact moment when the block has been mined and validated by the blockchain com.example.cryptotracker.network                 |
    | max_supply           | Int      | the maximum number of coins or tokens that will be ever created                                                     |
    | market_cap           | Int      | the total value of all the coins that have been mined                                                               |
    | market_cap_dominance | Double   | the ratio between the market capitalization of currency to the total market cap of the entire cryptocurrency market |
@@ -114,7 +114,7 @@ An app to track up-to-dated cryptocurrencies.
    | rank                 | Int      | rank of the currency                                                                                                |
    | rank_delta           | Int      | rank of a risk metric that estimates the change in price of a derivative                                            |
    | high                 | Double   | the highest price a trader paid for an asset                                                                        |
-   | high_timestamp       | String   | the exact moment of the highest price at when the block has been mined and validated by the blockchain network         |
+   | high_timestamp       | String   | the exact moment of the highest price at when the block has been mined and validated by the blockchain com.example.cryptotracker.network         |
 
 #### DayChange
 

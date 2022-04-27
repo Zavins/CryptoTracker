@@ -1,10 +1,10 @@
-package network
+package com.example.cryptotracker.network
 import android.app.Application
 import android.util.Log
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.RequestParams
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
-import models.Crypto
+import com.example.cryptotracker.models.Crypto
 import okhttp3.Headers
 
 /*

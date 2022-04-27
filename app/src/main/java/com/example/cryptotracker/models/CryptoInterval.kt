@@ -1,7 +1,7 @@
-package models
+package com.example.cryptotracker.models
 
 import org.json.JSONObject
-import utilities.JsonSafeGet
+import com.example.cryptotracker.utilities.JsonSafeGet
 
 class CryptoInterval {
     var priceChange: Number = 0

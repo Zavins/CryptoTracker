@@ -7,8 +7,8 @@ import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.cryptotracker.fragments.HomeFragment
 import com.example.cryptotracker.fragments.NewsFragment
-import models.Crypto
-import network.RestClient
+import com.example.cryptotracker.models.Crypto
+import com.example.cryptotracker.network.RestClient
 
 
 class MainActivity : AppCompatActivity() {

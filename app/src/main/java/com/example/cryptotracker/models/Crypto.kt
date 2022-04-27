@@ -1,8 +1,8 @@
-package models
+package com.example.cryptotracker.models
 
 import org.json.JSONArray
 import org.json.JSONObject
-import utilities.JsonSafeGet
+import com.example.cryptotracker.utilities.JsonSafeGet
 
 class Crypto {
     var id: String = ""

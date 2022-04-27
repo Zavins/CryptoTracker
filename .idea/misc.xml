@@ -7,7 +7,17 @@
         <entry key="..\:/CodePath/CryptoTracker/app/src/main/res/layout/fragment_home.xml" value="0.16757246376811594" />
         <entry key="..\:/CodePath/CryptoTracker/app/src/main/res/layout/fragment_news.xml" value="0.18802083333333333" />
         <entry key="..\:/CodePath/CryptoTracker/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/layout/fragment_home.xml" value="0.10144927536231885" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/drawable/ic_baseline_article_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/drawable/ic_baseline_bar_chart_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/drawable/ic_baseline_navigate_before_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/layout/activity_main.xml" value="0.15489130434782608" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/layout/item_crypto.xml" value="0.2" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Yuan/Desktop/CodePath/CryptoTracker1/app/src/main/res/menu/menu_page_navigation.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
