@@ -23,21 +23,34 @@
         android:id="@+id/pageBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="5dp"
         android:clipToPadding="false"
 
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rvCrypto"
         app:menu="@menu/menu_page_navigation"
-        android:contentInsetStart="0dp"
-        app:contentInsetStart="0dp"
-        android:contentInsetEnd="0dp"
-        app:contentInsetEnd="0dp"
         app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
     </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/pageNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Page: 1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pageBar"
+        app:layout_constraintTop_toBottomOf="@+id/rvCrypto" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

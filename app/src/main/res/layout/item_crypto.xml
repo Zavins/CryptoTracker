@@ -7,56 +7,55 @@
 
     <ImageView
         android:id="@+id/cryptoLogo"
+        android:contentDescription="LOGO"
+        android:adjustViewBounds="true"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cryptoName"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/cryptoName"
-        android:layout_width="110dp"
+        android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_margin="5dp"
-        android:text="DOGE/USD"
         android:gravity="center_vertical"
-        android:textSize="20sp"
+        android:text="DOGE/USD"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cryptoLogo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cryptoPrice"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/cryptoPrice"
-        android:layout_width="110dp"
+        android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_margin="5dp"
-        android:text="38,140.00"
         android:gravity="center_vertical"
+        android:text="38,140.00"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cryptoName"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cryptoChangePercentage"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/cryptoChangePercentage"
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="60dp"
         android:layout_marginVertical="5dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|end"
         android:text="-5.62%"
-        android:gravity="center_vertical|right"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="cryptoPrice"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cryptoPrice"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
