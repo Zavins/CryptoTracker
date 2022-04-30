@@ -5,6 +5,7 @@ import org.json.JSONObject
 import com.example.cryptotracker.utilities.JsonSafeGet
 
 class Crypto {
+
     var id: String = ""
     var currency: String = ""
     var name:String = ""

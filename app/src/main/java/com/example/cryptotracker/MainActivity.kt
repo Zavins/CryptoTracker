@@ -1,11 +1,15 @@
 package com.example.cryptotracker
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.cryptotracker.fragments.HomeFragment
 import com.example.cryptotracker.fragments.NewsFragment
+import com.example.cryptotracker.models.Crypto
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,4 +43,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_home
 
     }
+
+
 }
