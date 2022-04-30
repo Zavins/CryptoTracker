@@ -11,7 +11,7 @@ import com.example.cryptotracker.models.Crypto
 import com.example.cryptotracker.utilities.LoadSVG
 
 
-class CryptosAdapter(val cryptos: List<Crypto>):RecyclerView.Adapter<CryptosAdapter.ViewHolder>() {
+class CryptosAdapter(val cryptos: ArrayList<Crypto>):RecyclerView.Adapter<CryptosAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
@@ -32,6 +32,16 @@ class CryptosAdapter(val cryptos: List<Crypto>):RecyclerView.Adapter<CryptosAdap
 
     override fun getItemCount(): Int {
         return cryptos.size
+    }
+
+    fun clear(){
+        cryptos.clear()
+        notifyDataSetChanged()
+    }
+
+    fun addAll(cryptos: ArrayList<Crypto>){
+        this.cryptos.addAll(cryptos)
+        notifyDataSetChanged()
     }
 
 

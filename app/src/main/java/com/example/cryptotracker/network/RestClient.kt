@@ -6,6 +6,7 @@ import com.codepath.asynchttpclient.RequestParams
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import com.example.cryptotracker.models.Crypto
 import okhttp3.Headers
+import java.lang.Error
 
 /*
  *
@@ -30,7 +31,7 @@ class RestClient() : Application(){
 
     private val client = AsyncHttpClient()
 
-    private fun getAPI(params_dict: Map<String, String>, callback: (cryptoList: List<Crypto>)->Unit) {
+    private fun getAPI(params_dict: Map<String, String>, callback: (cryptoList: ArrayList<Crypto>)->Unit) {
         val params = RequestParams()
         params["key"] = "d489d947fe979cf49117677d2e9946450f100441"
         params_dict.forEach { param ->
@@ -39,9 +40,13 @@ class RestClient() : Application(){
         client[API_URL, params, object :
             JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Headers, json: JSON) {
-                Log.d(TAG, json.jsonArray.toString())
-                val cryptoList = Crypto.fromJsonArray(json.jsonArray)
-                callback.invoke(cryptoList)
+                try {
+                    val cryptoList = Crypto.fromJsonArray(json.jsonArray)
+                    callback.invoke(cryptoList)
+                }catch (e: Error){
+                    Log.e(TAG, "Parsing crytoList error, "+ e.toString())
+                }
+
                 // Access a JSON object response with `json.jsonObject`
             }
 
@@ -57,7 +62,7 @@ class RestClient() : Application(){
     }
 
     //Use getCryptoInfoList to get a list of crypto info.
-    fun getCryptoInfoList(page: Number, callback: (cryptoList: List<Crypto>)->Unit){
+    fun getCryptoInfoList(page: Number, callback: (cryptoList: ArrayList<Crypto>)->Unit){
         this.getAPI(
             mapOf(
                 "interval" to "1h,1d,7d,30d,365d,ytd",
@@ -65,7 +70,7 @@ class RestClient() : Application(){
                 "page" to page.toString()
             ),
         ){
-            cryptoList: List<Crypto>->
+            cryptoList: ArrayList<Crypto>->
             callback.invoke(cryptoList)
         }
     }

@@ -58,7 +58,7 @@ class Crypto {
             return crypto
         }
 
-        fun fromJsonArray(jsonArray: JSONArray): List<Crypto>{
+        fun fromJsonArray(jsonArray: JSONArray): ArrayList<Crypto>{
             val cryptoList = ArrayList<Crypto>()
             for (i in 0 until jsonArray.length()){
                 cryptoList.add(fromJson(jsonArray.getJSONObject(i)))
