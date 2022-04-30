@@ -61,7 +61,7 @@ class HomeFragment : Fragment() {
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(p0: String?): Boolean {
               //DO("Not yet implemented")
-                Toast.makeText(context,"Not working",Toast.LENGTH_SHORT).show()
+               
                 return true
             }
 
