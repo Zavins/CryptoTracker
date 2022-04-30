@@ -2,12 +2,12 @@ package com.example.cryptotracker.fragments
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
     lateinit var previousButton: ActionMenuItemView;
     lateinit var nextButton: ActionMenuItemView;
     lateinit var pageText: TextView;
-
+//    lateinit var svCrypto: SearchView
     private var pageNumber = 1
     private val cryptos = ArrayList<Crypto>()
 
@@ -49,6 +49,8 @@ class HomeFragment : Fragment() {
         scCrypto.setOnRefreshListener {
             populateCryptos()
         }
+//        svCrypto = requireView().findViewById<SearchView>(R.id.svCrypto)
+
         previousButton = requireView().findViewById<ActionMenuItemView>(R.id.action_previous)
         nextButton = requireView().findViewById<ActionMenuItemView>(R.id.action_next)
 
@@ -76,6 +78,17 @@ class HomeFragment : Fragment() {
             android.R.color.holo_orange_light,
             android.R.color.holo_red_light
         )
+
+//        svCrypto.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+//            override fun onQueryTextSubmit(query: String): Boolean {
+//                searchCrypto(query)
+//                return false
+//            }
+//
+//            override fun onQueryTextChange(newText: String): Boolean {
+//                return false
+//            }
+//        })
         populateCryptos()
 
     }
@@ -97,5 +110,9 @@ class HomeFragment : Fragment() {
             Log.e("Home Fragment Error", "Error in populating cryptos, " + e.toString())
         }
     }
+
+//    fun searchCrypto(query: String){
+//        //Do Search
+//    }
 
 }
