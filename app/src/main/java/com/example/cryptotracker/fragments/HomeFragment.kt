@@ -3,6 +3,7 @@ package com.example.cryptotracker.fragments
 import android.os.Bundle
 import android.view.*
 import android.widget.SearchView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -59,7 +60,9 @@ class HomeFragment : Fragment() {
         val searchView=item?.actionView as SearchView
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(p0: String?): Boolean {
-                TODO("Not yet implemented")
+              //DO("Not yet implemented")
+                Toast.makeText(context,"Not working",Toast.LENGTH_SHORT).show()
+                return true
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
