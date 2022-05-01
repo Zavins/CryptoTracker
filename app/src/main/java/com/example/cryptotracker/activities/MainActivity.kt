@@ -1,8 +1,9 @@
-package com.example.cryptotracker
+package com.example.cryptotracker.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.example.cryptotracker.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.cryptotracker.fragments.HomeFragment
 import com.example.cryptotracker.fragments.NewsFragment
