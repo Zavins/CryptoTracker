@@ -36,6 +36,7 @@ An app to track up-to-dated cryptocurrencies.
 **APIs implemented**
 - **Cryptocurrency data:**
 - **Recent news:**
+<img src="![crypto_trucker](https://user-images.githubusercontent.com/78896535/166136391-54e2148b-71e2-4331-8965-666901f0399f.gif)"
 
 
 ## Product Spec
